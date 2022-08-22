@@ -15,10 +15,10 @@ class UserShoppingList: Object {
     
     @Persisted(primaryKey: true) var objectId: ObjectId
 
-    convenience init(favorite: bool, checkBox: bool, title: String) {
+    convenience init(title: String) {
         self.init()
-        self.favorite = favorite
-        self.checkBox = checkBox
+        self.favorite = false
+        self.checkBox = false
         self.title = title
     }
 }

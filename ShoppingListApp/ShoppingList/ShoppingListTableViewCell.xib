@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShoppingListTableViewCell" customModule="ShoppingListApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pks-Zv-QPb">
+                        <rect key="frame" x="8" y="8" width="24" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Pks-Zv-QPb" secondAttribute="height" multiplier="6:7" id="TDY-PX-kFt"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                        <connections>
+                            <action selector="checkBoxButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ayI-49-5Cl"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ0-mc-oRV">
+                        <rect key="frame" x="288" y="8" width="24" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XQ0-mc-oRV" secondAttribute="height" multiplier="6:7" id="4bh-Kk-sMF"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                        <connections>
+                            <action selector="favoriteButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B1T-DA-wS3"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOZ-6A-BzW">
+                        <rect key="frame" x="36" y="8" width="248" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="XQ0-mc-oRV" secondAttribute="bottom" constant="8" id="1To-ag-Rb6"/>
+                    <constraint firstAttribute="bottom" secondItem="Pks-Zv-QPb" secondAttribute="bottom" constant="8" id="8wX-xl-JpX"/>
+                    <constraint firstItem="Pks-Zv-QPb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="EU3-ep-Mf3"/>
+                    <constraint firstItem="XQ0-mc-oRV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GOt-2h-RvU"/>
+                    <constraint firstAttribute="bottom" secondItem="OOZ-6A-BzW" secondAttribute="bottom" constant="8" id="RoD-13-Kz6"/>
+                    <constraint firstItem="Pks-Zv-QPb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eAO-H3-ZEp"/>
+                    <constraint firstItem="XQ0-mc-oRV" firstAttribute="leading" secondItem="OOZ-6A-BzW" secondAttribute="trailing" constant="4" id="g1Z-WM-Qr7"/>
+                    <constraint firstItem="OOZ-6A-BzW" firstAttribute="leading" secondItem="Pks-Zv-QPb" secondAttribute="trailing" constant="4" id="jGc-yu-9oP"/>
+                    <constraint firstAttribute="trailing" secondItem="XQ0-mc-oRV" secondAttribute="trailing" constant="8" id="ueB-LJ-3Iq"/>
+                    <constraint firstItem="OOZ-6A-BzW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="zRb-hf-QTU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="Pks-Zv-QPb" id="hIs-uS-4cU"/>
+                <outlet property="favoriteButton" destination="XQ0-mc-oRV" id="aaF-bg-lIU"/>
+                <outlet property="shoppingLabel" destination="OOZ-6A-BzW" id="yJZ-ei-LTe"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

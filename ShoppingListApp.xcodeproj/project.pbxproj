@@ -17,6 +17,8 @@
 		2F9A7DE028B372C900716C43 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9A7DDF28B372C900716C43 /* Realm */; };
 		2F9A7DE228B372C900716C43 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F9A7DE128B372C900716C43 /* RealmSwift */; };
 		2F9A7DE428B372EE00716C43 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A7DE328B372EE00716C43 /* RealmModel.swift */; };
+		2FCF7FCE28B3D47000266A00 /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF7FCC28B3D47000266A00 /* ShoppingListTableViewCell.swift */; };
+		2FCF7FCF28B3D47000266A00 /* ShoppingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FCF7FCD28B3D47000266A00 /* ShoppingListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		2F9A7DD028B3703D00716C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F9A7DD228B3703D00716C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F9A7DE328B372EE00716C43 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		2FCF7FCC28B3D47000266A00 /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		2FCF7FCD28B3D47000266A00 /* ShoppingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		2F9A7DD828B3704F00716C43 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				2FCF7FCC28B3D47000266A00 /* ShoppingListTableViewCell.swift */,
+				2FCF7FCD28B3D47000266A00 /* ShoppingListTableViewCell.xib */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9A7DD128B3703D00716C43 /* LaunchScreen.storyboard in Resources */,
+				2FCF7FCF28B3D47000266A00 /* ShoppingListTableViewCell.xib in Resources */,
 				2F9A7DCE28B3703D00716C43 /* Assets.xcassets in Resources */,
 				2F9A7DCC28B3703C00716C43 /* Main.storyboard in Resources */,
 			);
@@ -180,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCF7FCE28B3D47000266A00 /* ShoppingListTableViewCell.swift in Sources */,
 				2F9A7DC928B3703C00716C43 /* ViewController.swift in Sources */,
 				2F9A7DE428B372EE00716C43 /* RealmModel.swift in Sources */,
 				2F9A7DC528B3703C00716C43 /* AppDelegate.swift in Sources */,
